@@ -1,6 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ApolloClient from "apollo-boost";
+import logo from "./logo.svg";
+import "./App.css";
+
+const client = new ApolloClient({
+  uri: "http://localhost:4000/graphql"
+});
 
 function App() {
   return (
